@@ -8,17 +8,22 @@ namespace FizzBuzz
     {
         public string Say(int count)
         {
-            if (count == 3)
+            if (count % 3 == 0 && count % 5 == 0)
+            {
+                return "FizzBuzz";
+            }
+
+            if (count % 3 == 0)
             {
                 return "Fizz";
             }
 
-            if (count == 5)
+            if (count % 5 == 0)
             {
                 return "Buzz";
             }
 
-            if (count == 7)
+            if (count % 7 == 0)
             {
                 return "Whizz";
             }

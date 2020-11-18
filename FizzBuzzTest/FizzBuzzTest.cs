@@ -81,6 +81,21 @@ namespace FizzBuzzTest
             Assert.Equal(expect, actual);
         }
 
+        [Fact]
+        public void FizzBuzz_Should_Return_FizzBuzz_Given_15()
+        {
+            //given
+            //Dependency dependency = new Dependency();
+            //HelloWorld helloWorld = new HelloWorld(dependency);
+            FizzBuzz.FizzBuzz fizzBuzz = new FizzBuzz.FizzBuzz();
+            //when
+            string actual = fizzBuzz.Say(15);
+            string expect = "FizzBuzz";
+            //then
+            //Assert.Equal("Leave me alone.", actual);
+            Assert.Equal(expect, actual);
+        }
+
         //[Fact]
         //public void Should_be_mocked()
         //{
